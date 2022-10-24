@@ -54,10 +54,10 @@ public class Ex04 {
 		System.out.print("Tens l'assignatura convalidada? ");
 		String preguntaConvalidada = sc.next();
 		sc.close();
-		boolean convalidacio = (preguntaConvalidada.charAt(0) == 'S') || (preguntaConvalidada.charAt(0) == 's');
+		boolean convalida = (preguntaConvalidada.charAt(0) == 'S') || (preguntaConvalidada.charAt(0) == 's');
 
 		boolean alumneAprova = ((faltesJustificades < (horesUF * 0.1)) && (mitjanaNotes > 4) && (notaExamen > 4)
-				&& (notaFinal >= 5)) || convalidacio;
+				&& (notaFinal >= 5)) || convalida;
 
 		if (alumneAprova) {
 			System.out.println("\nHas aprovat la Unitat Formativa");
